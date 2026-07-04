@@ -1,0 +1,21 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        ORG_NAME: "Tim Eksternal Indonesia"
+        ORG_TAGLINE: "Bersama Membangun dan Berinovasi"
+        ORG_MISSION: "Mendukung kolaborasi, inovasi, dan pengembangan sumber daya manusia."
+        ORG_VISION: "Menjadi tim yang profesional, inovatif, dan terpercaya."
+        ORG_FOUNDED: "2005"
+        ORG_MEMBERS: "50+"
+        ORG_DIVISION: "5"
+        ORG_EMAIL: "251572010022jusanbahrudin@student.stmik.tazkia.ac.id"
+        ORG_LOCATION: "stmik tazkia bogor"
+
+    image: soal-1b-web
+    container_name: mjusan-soal-1b-
+
+    ports:
+      - "8086:80"
